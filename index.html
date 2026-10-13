@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#10251e">
+<meta name="description" content="Welcome to Luke's Journey — morning walks, evening walks, beautiful places, and original music.">
+<title>Luke's Journey | Every Step Tells a Story</title>
+<style>
+:root{--forest:#10251e;--forest2:#1d3b2e;--cream:#f7f3e9;--gold:#e5bd72;--ink:#17231d;--muted:#66736b}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.6}a{color:inherit;text-decoration:none}.wrap{width:min(1120px,90%);margin:auto}
+header{background:var(--forest);color:white;position:sticky;top:0;z-index:10;border-bottom:1px solid #ffffff1c}.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{font-weight:850;letter-spacing:.02em;font-size:1.18rem;display:flex;align-items:center;gap:10px}.brand-mark{display:grid;place-items:center;width:38px;height:38px;background:var(--gold);color:var(--forest);border-radius:50%;font-size:1.1rem}.navlinks{display:flex;align-items:center;gap:26px;font-size:.92rem;color:#e6ebe5}.navlinks a:hover{color:var(--gold)}.nav-cta,.btn{display:inline-flex;align-items:center;justify-content:center;border-radius:999px;padding:12px 20px;font-weight:750;transition:transform .2s,background .2s}.nav-cta,.btn-gold{background:var(--gold);color:var(--forest)}.btn:hover,.nav-cta:hover{transform:translateY(-2px)}.menu{display:none;background:none;border:1px solid #ffffff55;color:white;border-radius:9px;padding:8px 12px;font-size:1.1rem}
+.hero{background:linear-gradient(115deg,rgba(9,27,20,.92),rgba(16,37,30,.76)),radial-gradient(ellipse at 80% 15%,#55735a,transparent 45%),linear-gradient(135deg,#284b39,#101e18);color:white;overflow:hidden;position:relative}.hero:after{content:"";position:absolute;width:440px;height:440px;border:1px solid #ffffff22;border-radius:50%;right:-100px;bottom:-240px;box-shadow:0 0 0 45px #ffffff08,0 0 0 90px #ffffff06}.hero-inner{min-height:590px;display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:55px;padding:76px 0;position:relative;z-index:1}.eyebrow{font-size:.78rem;text-transform:uppercase;letter-spacing:.2em;color:var(--gold);font-weight:800}.hero h1{font-size:clamp(3rem,6.5vw,5.7rem);line-height:.99;letter-spacing:-.055em;margin:18px 0 22px;max-width:650px}.hero h1 em{font-family:Georgia,serif;font-weight:500;color:var(--gold)}.hero p{color:#e0e7e0;font-size:1.08rem;max-width:520px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.btn-outline{border:1px solid #ffffff70;color:white}.hero-art{height:390px;position:relative;display:grid;place-items:center}.sun{width:210px;height:210px;background:linear-gradient(145deg,#f5dba1,#c98c48);border-radius:50%;position:absolute;top:28px;right:55px;opacity:.96}.hill{position:absolute;bottom:16px;width:100%;height:230px;clip-path:polygon(0 100%,0 65%,18% 40%,34% 60%,56% 15%,78% 56%,100% 30%,100% 100%);background:#59755b}.hill.back{bottom:55px;height:210px;opacity:.6;transform:scaleX(-1);background:#a0a77a}.trail{position:absolute;bottom:0;left:46%;width:100px;height:220px;background:var(--cream);clip-path:polygon(45% 100%,57% 100%,54% 68%,68% 48%,61% 32%,75% 10%,69% 0,54% 14%,45% 32%,49% 48%,39% 67%);opacity:.92}.art-label{position:absolute;bottom:6px;left:0;background:#10251edb;border:1px solid #ffffff30;border-radius:14px;padding:14px 18px;backdrop-filter:blur(8px)}.art-label strong{display:block}.art-label span{font-size:.82rem;color:#d7e0d5}
+section{padding:84px 0}.section-head{max-width:650px;margin-bottom:36px}.section-head h2{font-size:clamp(2rem,4vw,3.25rem);letter-spacing:-.045em;line-height:1.1;margin:10px 0 14px}.section-head p{color:var(--muted);margin:0}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.card{background:white;border:1px solid #e8e4d9;border-radius:18px;overflow:hidden;box-shadow:0 8px 25px #17231d08}.card-art{height:190px;display:flex;align-items:flex-end;padding:20px;color:white;position:relative;overflow:hidden}.card-art:before,.card-art:after{content:"";position:absolute;border-radius:50%;border:1px solid #ffffff55;width:220px;height:220px;right:-45px;top:-90px}.card-art:after{width:150px;height:150px;right:0;top:-55px}.morning{background:linear-gradient(135deg,#d6a66a,#667d65)}.evening{background:linear-gradient(135deg,#3c4b62,#c17a5d)}.places{background:linear-gradient(135deg,#567c70,#193b3c)}.card-art .symbol{font-size:2.5rem;position:relative;z-index:1}.card-body{padding:22px}.card h3{margin:0 0 8px;font-size:1.2rem}.card p{margin:0;color:var(--muted);font-size:.94rem}.music{background:#e9e5d8}.music-inner{display:grid;grid-template-columns:.8fr 1.2fr;gap:55px;align-items:center}.record{aspect-ratio:1;max-width:340px;margin:auto;border-radius:50%;background:repeating-radial-gradient(circle at center,#1a2b22 0 3px,#263d30 4px 6px);display:grid;place-items:center;box-shadow:0 18px 40px #17231d20;position:relative}.record:before{content:"";position:absolute;width:38%;height:38%;border-radius:50%;background:var(--gold);border:8px solid #e8ce96}.record:after{content:"LJ";position:absolute;color:var(--forest);font-weight:900;font-size:1.7rem}.music-copy h2{font-size:clamp(2rem,4vw,3.2rem);line-height:1.1;letter-spacing:-.04em;margin:12px 0}.music-copy p{color:#5e695f}.goal{background:var(--forest);color:white}.goal-inner{display:flex;align-items:center;justify-content:space-between;gap:35px}.goal h2{font-size:clamp(2rem,4vw,3.1rem);line-height:1.1;margin:12px 0}.goal p{color:#d2ddd3;max-width:600px}.goal-number{font-size:clamp(3.5rem,8vw,6rem);font-weight:900;letter-spacing:-.07em;color:var(--gold);white-space:nowrap}.goal-number span{display:block;font-size:.9rem;letter-spacing:.15em;text-transform:uppercase;text-align:right;color:#e0e7e0}
+.contact{text-align:center}.contact .section-head{margin:0 auto 28px}.contact .actions{justify-content:center}footer{background:#0a1913;color:#d9e1d9;padding:30px 0}.footer-inner{display:flex;justify-content:space-between;gap:20px;align-items:center}.footer-inner small{color:#aab8ad}.social{display:flex;gap:18px;font-size:.9rem}
+@media(max-width:760px){.navlinks{display:none;position:absolute;top:76px;left:0;right:0;background:var(--forest);padding:22px 5%;flex-direction:column;align-items:flex-start}.navlinks.open{display:flex}.menu{display:block}.nav-cta{display:none}.hero-inner{grid-template-columns:1fr;gap:12px;padding:65px 0 35px}.hero-art{height:300px}.sun{width:160px;height:160px;right:45px}.hill{height:180px}.hill.back{height:170px}.trail{height:170px}.hero h1{font-size:clamp(3rem,13vw,4.7rem)}section{padding:64px 0}.cards{grid-template-columns:1fr}.card-art{height:160px}.music-inner{grid-template-columns:1fr;gap:35px}.record{max-width:240px}.goal-inner{flex-direction:column;align-items:flex-start}.goal-number span{text-align:left}.footer-inner{flex-direction:column;align-items:flex-start}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#home"><span class="brand-mark">↗</span> Luke’s Journey</a>
+    <nav class="navlinks" id="navlinks"><a href="#journey">The Journey</a><a href="#music">Our Music</a><a href="#goal">The Dream</a><a href="#contact">Connect</a></nav>
+    <a class="nav-cta" href="#contact">Come along →</a>
+    <button class="menu" id="menu" aria-label="Open navigation" aria-expanded="false">☰</button>
+  </div>
+</header>
+<main>
+<section class="hero" id="home">
+  <div class="wrap hero-inner">
+    <div>
+      <div class="eyebrow">A little adventure, every day</div>
+      <h1>Every step<br>tells <em>a story.</em></h1>
+      <p>Welcome to Luke’s Journey — come along for peaceful morning walks, beautiful evening views, new places, and original music. Let’s make memories one step at a time.</p>
+      <div class="actions"><a class="btn btn-gold" href="#journey">Explore the journey ↓</a><a class="btn btn-outline" href="#music">Discover our music ♫</a></div>
+    </div>
+    <div class="hero-art" aria-label="Illustration of a sun over rolling green hills">
+      <div class="sun"></div><div class="hill back"></div><div class="hill"></div><div class="trail"></div>
+      <div class="art-label"><strong>Walk. Explore. Feel alive.</strong><span>Every day brings a new story.</span></div>
+    </div>
+  </div>
+</section>
+<section id="journey">
+  <div class="wrap">
+    <div class="section-head"><div class="eyebrow">Find your moment</div><h2>Little walks.<br>Big memories.</h2><p>Slow down, look around, and enjoy the world with Luke’s Journey. Here’s what you can explore on the channel.</p></div>
+    <div class="cards">
+      <article class="card"><div class="card-art morning"><span class="symbol">☀</span></div><div class="card-body"><h3>Morning Walks</h3><p>Fresh air, quiet roads, and a positive start to a brand-new day.</p></div></article>
+      <article class="card"><div class="card-art evening"><span class="symbol">☾</span></div><div class="card-body"><h3>Evening Walks</h3><p>Golden skies, peaceful moments, and the beauty of the day winding down.</p></div></article>
+      <article class="card"><div class="card-art places"><span class="symbol">⌖</span></div><div class="card-body"><h3>Places & Memories</h3><p>Discover lovely views and everyday adventures, one video at a time.</p></div></article>
+    </div>
+  </div>
+</section>
+<section class="music" id="music">
+  <div class="wrap music-inner">
+    <div class="record" aria-label="Luke's Journey record illustration"></div>
+    <div class="music-copy"><div class="eyebrow">A new chapter in sound</div><h2>Our journey has a soundtrack.</h2><p>Something special is on the way! Follow Luke’s Journey for updates about the original title song and upcoming music. Let’s make every moment memorable.</p><div class="actions"><a class="btn btn-gold" href="#contact">Get launch updates ♫</a></div></div>
+  </div>
+</section>
+<section class="goal" id="goal">
+  <div class="wrap goal-inner"><div><div class="eyebrow">A dream we can share</div><h2>Help us reach the next milestone.</h2><p>Every view, like, comment, and subscription means a lot. If you enjoy the journey, share the channel with a friend and be part of our growing community.</p><a class="btn btn-gold" href="#contact">Join the journey →</a></div><div class="goal-number">500<span>Subscribers goal</span></div></div>
+</section>
+<section class="contact" id="contact">
+  <div class="wrap"><div class="section-head"><div class="eyebrow">You’re invited</div><h2>Let’s keep moving.</h2><p>Thanks for being part of Luke’s Journey. Subscribe on YouTube, share your favourite video, and follow along for what comes next.</p></div><div class="actions"><a class="btn btn-gold" href="https://youtube.com/@abrahamluke007" target="_blank" rel="noopener noreferrer">Find us on YouTube ↗</a><a class="btn" style="border:1px solid #c9c9bc" href="#home">Back to top ↑</a></div><p style="font-size:.85rem;color:var(--muted);margin-top:22px">Tip: YouTube channel: @abrahamluke007</p></div>
+</section>
+</main>
+<footer><div class="wrap footer-inner"><a class="brand" href="#home"><span class="brand-mark">↗</span> Luke’s Journey</a><small>© <span id="year">2026</span> Luke’s Journey. Every step tells a story.</small><div class="social"><a href="#journey">Explore</a><a href="#music">Music</a><a href="https://youtube.com/@abrahamluke007" target="_blank" rel="noopener noreferrer">YouTube</a></div></div></footer>
+<script>
+const menu=document.getElementById('menu'), links=document.getElementById('navlinks');
+menu.addEventListener('click',()=>{const open=links.classList.toggle('open');menu.setAttribute('aria-expanded',String(open));menu.textContent=open?'✕':'☰'});
+links.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{links.classList.remove('open');menu.setAttribute('aria-expanded','false');menu.textContent='☰'}));
+document.getElementById('year').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
